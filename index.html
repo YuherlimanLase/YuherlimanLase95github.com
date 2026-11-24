@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional portfolio of Yuherliman Lase - Aviation Security, Quality Control and Internal Inspector.">
+<title>Yuherliman Lase | Professional Portfolio</title>
+<style>
+:root{--navy:#101c35;--blue:#203b63;--maroon:#8b2635;--light:#f5f7fb;--text:#263247;--muted:#718096}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--light);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1120px;margin:auto}
+nav{background:rgba(16,28,53,.97);color:white;padding:18px 0;position:sticky;top:0;z-index:100}
+.nav-content{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:21px;font-weight:700;letter-spacing:1px}.logo span{color:#d8a2aa}
+.nav-links{display:flex;gap:25px;list-style:none;font-size:14px}.nav-links a:hover{color:#d8a2aa}
+.hero{background:radial-gradient(circle at 85% 20%,#30496f 0,transparent 35%),linear-gradient(135deg,#101c35,#203b63);color:white;padding:100px 0 110px}
+.hero-content{display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:60px}
+.eyebrow{color:#d8a2aa;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.15;margin-bottom:20px}.hero h1 span{color:#d8a2aa}
+.hero-description{color:#d1d9e7;font-size:17px;max-width:600px;margin-bottom:25px}
+.buttons{display:flex;gap:15px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 25px;border-radius:7px;font-weight:600;font-size:14px;transition:.3s}
+.btn-primary{background:var(--maroon);color:white}.btn-primary:hover{background:#a83748;transform:translateY(-3px)}
+.btn-outline{border:1px solid #b8c5d8;color:white}.btn-outline:hover{background:white;color:var(--navy)}
+.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:35px;backdrop-filter:blur(10px)}
+.hero-card .number{font-size:54px;font-weight:800;color:#d8a2aa;line-height:1.2}.hero-card p{color:#d1d9e7;margin-top:10px}
+.hero-card hr{border:0;border-top:1px solid #50617b;margin:25px 0}
+section{padding:85px 0}.section-heading{margin-bottom:45px}.section-heading .label{color:var(--maroon);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.section-heading h2{color:var(--navy);font-size:34px;margin-top:8px}.section-heading p{color:var(--muted);max-width:650px;margin-top:10px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.about-text p{margin-bottom:18px;color:#536176}
+.info-card{background:white;border-radius:14px;padding:30px;box-shadow:0 8px 30px rgba(20,40,70,.05)}
+.info-row{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid #edf0f5}.info-row:last-child{border-bottom:none}.info-row strong{color:var(--navy)}
+.experience,.projects{background:white}.timeline{border-left:2px solid #e2e7ef;margin-left:10px;padding-left:30px}
+.timeline-item{position:relative;margin-bottom:35px}.timeline-item::before{content:"";position:absolute;width:13px;height:13px;background:var(--maroon);border:4px solid #f5e8eb;border-radius:50%;left:-40px;top:5px}
+.timeline-date{color:var(--maroon);font-size:13px;font-weight:700}.timeline-item h3{color:var(--navy);font-size:21px;margin:5px 0}.timeline-item h4{color:#65748a;font-size:15px;font-weight:500;margin-bottom:10px}.timeline-item p{color:#647187}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.skill-card{background:white;border-radius:14px;padding:28px;border:1px solid #edf0f5;transition:.3s}
+.skill-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(20,40,70,.08)}
+.skill-icon{width:48px;height:48px;background:#f5e8eb;color:var(--maroon);display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:22px;margin-bottom:18px}
+.skill-card h3{color:var(--navy);font-size:18px;margin-bottom:10px}.skill-card p{color:var(--muted);font-size:14px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px}.project-card{background:var(--light);padding:30px;border-radius:14px;border-top:4px solid var(--maroon)}
+.project-card h3{color:var(--navy);margin-bottom:12px}.project-card p{color:#647187;font-size:15px}.tag{display:inline-block;background:#e8edf5;color:var(--blue);padding:5px 11px;border-radius:20px;font-size:12px;margin-top:15px;margin-right:5px}
+.education-card{background:white;padding:30px;border-radius:14px;border-left:4px solid var(--maroon);box-shadow:0 8px 25px rgba(20,40,70,.04);margin-bottom:18px}.education-card h3{color:var(--navy);margin-bottom:5px}
+.contact{background:var(--navy);color:white;text-align:center}.contact h2{font-size:36px;margin-bottom:15px}.contact p{color:#cbd5e1;max-width:600px;margin:0 auto 30px}.contact .btn{margin:5px}
+footer{background:#0b1428;color:#9ba9bf;text-align:center;padding:25px;font-size:13px}
+@media(max-width:800px){.nav-content{flex-direction:column}.nav-links{gap:14px;flex-wrap:wrap;justify-content:center}.hero{padding:65px 0}.hero-content,.about-grid{grid-template-columns:1fr;gap:35px}.skills-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:1fr}section{padding:60px 0}}
+@media(max-width:500px){.skills-grid{grid-template-columns:1fr}.nav-links{font-size:12px;gap:10px}.hero h1{font-size:39px}.section-heading h2{font-size:28px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav-content">
+<div class="logo">YUHERLIMAN<span>.</span></div>
+<ul class="nav-links">
+<li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+<header class="hero"><div class="container hero-content"><div>
+<div class="eyebrow">Professional Portfolio</div><h1>Yuherliman<br><span>Lase.</span></h1>
+<p class="hero-description">Aviation Security | Quality Control | Internal Aviation Security Inspector</p>
+<p class="hero-description">Dedicated to aviation security, operational compliance, cargo screening, and continuous improvement.</p>
+<div class="buttons"><a href="#experience" class="btn btn-primary">Explore My Profile →</a><a href="#contact" class="btn btn-outline">Contact Me</a></div>
+</div><div class="hero-card"><div class="number">9+</div><h3>Years of Experience</h3><p>Aviation security and cargo security operations with a focus on safety, compliance, and quality.</p><hr><h3>Professional Focus</h3><p>Aviation Security · Quality Control · Inspection · Compliance</p></div></div></header>
+<section id="about"><div class="container"><div class="section-heading"><div class="label">About Me</div><h2>Professional Profile</h2><p>A brief introduction to my professional background and career journey.</p></div>
+<div class="about-grid"><div class="about-text"><p>I am an aviation security professional with experience in passenger, baggage, cargo, and mail security operations.</p><p>My professional experience includes aviation security screening, access control, operational inspection, internal quality control, and compliance monitoring within the regulated agent environment.</p><p>I am committed to maintaining security standards, identifying operational gaps, and supporting corrective actions to improve service quality and aviation security performance.</p></div>
+<div class="info-card"><div class="info-row"><span>Full Name</span><strong>Yuherliman Lase</strong></div><div class="info-row"><span>Industry</span><strong>Aviation</strong></div><div class="info-row"><span>Specialization</span><strong>AVSEC & QC</strong></div><div class="info-row"><span>Location</span><strong>Tangerang, Indonesia</strong></div><div class="info-row"><span>Career Focus</span><strong>Security & Compliance</strong></div></div></div></div></section>
+<section id="experience" class="experience"><div class="container"><div class="section-heading"><div class="label">Career Journey</div><h2>Work Experience</h2><p>Professional experience in aviation security and regulated agent operations.</p></div><div class="timeline">
+<div class="timeline-item"><div class="timeline-date">2024 – Present</div><h3>Quality Control Internal / Inspector</h3><h4>PT Cahaya Mas Utama III · Regulated Agent</h4><p>Conduct internal inspections, operational evaluations, compliance monitoring, preparation of inspection reports, and follow-up of corrective actions related to cargo and mail security.</p></div>
+<div class="timeline-item"><div class="timeline-date">2016 – 2024</div><h3>Aviation Security Officer / Junior AVSEC</h3><h4>PT Angkasa Pura Solusi & PT Angkasa Pura Solusi Integra</h4><p>Performed aviation security duties including security screening, access control, personnel and baggage checks, and security procedures in operational areas.</p></div>
+</div></div></section>
+<section id="skills"><div class="container"><div class="section-heading"><div class="label">Technical Expertise</div><h2>Skills & Competencies</h2><p>Technical knowledge and professional competencies developed through aviation security experience.</p></div><div class="skills-grid">
+<div class="skill-card"><div class="skill-icon">✈</div><h3>Aviation Security</h3><p>Aviation security procedures, access control, security checks, and operational safety.</p></div>
+<div class="skill-card"><div class="skill-icon">▣</div><h3>Cargo & Mail Screening</h3><p>Cargo and mail security screening, X-Ray inspection, and shipment security.</p></div>
+<div class="skill-card"><div class="skill-icon">✓</div><h3>Quality Control</h3><p>Internal inspection, compliance evaluation, findings identification, and CAP monitoring.</p></div>
+<div class="skill-card"><div class="skill-icon">⌕</div><h3>Security Inspection</h3><p>Operational observation, security testing, and assessment of security procedures.</p></div>
+<div class="skill-card"><div class="skill-icon">▤</div><h3>Reporting & Documentation</h3><p>Inspection reports, audit documentation, evidence collection, and data analysis.</p></div>
+<div class="skill-card"><div class="skill-icon">◎</div><h3>Compliance Monitoring</h3><p>Monitoring implementation of security regulations, SOPs, and corrective actions.</p></div>
+</div></div></section>
+<section id="projects" class="projects"><div class="container"><div class="section-heading"><div class="label">Professional Work</div><h2>Projects & Activities</h2><p>Selected professional activities and work related to aviation security and quality control.</p></div><div class="project-grid">
+<div class="project-card"><h3>Internal Security Inspection</h3><p>Conducting internal inspections and operational evaluations to identify security gaps and support compliance improvement.</p><span class="tag">Inspection</span><span class="tag">Compliance</span></div>
+<div class="project-card"><h3>Corrective Action Monitoring</h3><p>Monitoring corrective action implementation, reviewing evidence, and preparing follow-up documentation for inspection findings.</p><span class="tag">CAP</span><span class="tag">Quality Control</span></div>
+<div class="project-card"><h3>Aviation Security Reporting</h3><p>Preparing operational summaries, inspection reports, and management documentation related to aviation security performance.</p><span class="tag">Reporting</span><span class="tag">Documentation</span></div>
+<div class="project-card"><h3>Security Awareness & Evaluation</h3><p>Supporting security awareness activities, operational observations, and evaluation of security procedures.</p><span class="tag">Security</span><span class="tag">Evaluation</span></div>
+</div></div></section>
+<section id="education"><div class="container"><div class="section-heading"><div class="label">Education</div><h2>Academic Background</h2></div>
+<div class="education-card"><h3>Universitas Terbuka</h3><p>Ilmu Komunikasi · Undergraduate Student</p></div>
+<div class="education-card"><h3>SMK Taruna Mandiri Padang</h3><p>Accounting / Akuntansi · Graduated 2015</p></div>
+</div></section>
+<section id="contact" class="contact"><div class="container"><div class="eyebrow">Get In Touch</div><h2>Let's Connect</h2><p>I am open to professional opportunities, collaborations, and career development in aviation security and quality control.</p>
+<a href="mailto:YOUR_EMAIL@gmail.com" class="btn btn-primary">Email Me</a><a href="https://www.linkedin.com/" class="btn btn-outline">LinkedIn</a></div></section>
+<footer><p>© 2026 Yuherliman Lase · Professional Portfolio</p><p>Aviation Security | Quality Control | Compliance</p></footer>
+</body>
+</html>
